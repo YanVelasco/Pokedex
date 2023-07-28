@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Normaliza css -->
+    <!-- Normalize css -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
@@ -22,63 +22,28 @@
     />
 
     <!-- Global css -->
-    <link rel="stylesheet" href="Assets/css/global.css" />
+    <link rel="stylesheet" href="Assets/css/global.css">
 
     <!-- JavvaScript -->
-    <Script defer src=""></Script>
+    <script defer src="Assets/js/pokeAPI.js"></script>
     <script defer src="Assets/js/main.js"></script>
+    <script defer src="Assets/js/pokemon-model.js"></script>
 
     <title>Document</title>
   </head>
   <body>
     <section class="content">
       <h1>Pokedex</h1>
-      <ol class="pokemons">
-        <li class="pokemon">
-          <span class="number">001</span>
-          <span class="name">Bulbassaur</span>
-          <div class="details">
-            <ol class="types">
-              <li class="type">Grass</li>
-              <li class="type">Poison</li>
-            </ol>
-            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/35.svg" alt="">
-          </div>
-        </li>
-        <li class="pokemon">
-          <span class="number">001</span>
-          <span class="name">Bulbassaur</span>
-          <div class="details">
-            <ol class="types">
-              <li class="type">Grass</li>
-              <li class="type">Poison</li>
-            </ol>
-            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/35.svg" alt="">
-          </div>
-        </li>
-        <li class="pokemon">
-          <span class="number">001</span>
-          <span class="name">Bulbassaur</span>
-          <div class="details">
-            <ol class="types">
-              <li class="type">Grass</li>
-              <li class="type">Poison</li>
-            </ol>
-            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/35.svg" alt="">
-          </div>
-        </li>
-        <li class="pokemon">
-          <span class="number">001</span>
-          <span class="name">Bulbassaur</span>
-          <div class="details">
-            <ol class="types">
-              <li class="type">Grass</li>
-              <li class="type">Poison</li>
-            </ol>
-            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/35.svg" alt="">
-          </div>
-        </li>
+      <ol id="pokemonList">
+        <!-- Lista de pokemons -->
       </ol>
+
+     <div class="pagination">
+      <button id="loadMore">
+        Carregar mais....
+      </button>
+     </div>
+
     </section>
   </body>
 </html>
